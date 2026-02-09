@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0%;
+            padding: 0%;
+            color: rgb(37, 33, 11);
+        }
+
+        .contacto{
+            max-width: 600px;
+            margin: 50px;
+            padding: 20px;
+            background-color: rgb(172, 172, 184);
+            border-radius: 15px;
+            box-shadow: 2px 4px rgb(41, 40, 40);
+            line-height: 1.2%;
+            color: black;
+            
+        }
+
+        #registration-form{
+
+            max-width: 600px;
+            margin: 50px;
+            padding: 20px;
+            background-color: rgb(136, 182, 167);
+            border-radius: 15px;
+            box-shadow: 2px 4px rgb(158, 106, 106)   ;
+            line-height: 1.5%;
+            color: black; 
+            align-content: center;
+        
+
+
+
+        }
+
+     
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section class="contacto">
+            <h1>Ingresos</h1>
+            <form action="formulario.html" method="post">
+                <div class="dato">
+                    <label for="Usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="ingrese su usuario" required>
+
+
+                </div>
+
+                <div class="dato">
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" id="Contraseña" name="contraseña" placeholder="ingrese su contraseña" required>
+
+
+
+                </div>
+
+                <div>
+                    <button type="submit">Ingresar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+
+
+
+            </form>
+
+        </section>
+
+        <section>
+            <form id="registration-form" class="space-y-4">
+            <!-- Campo para el Nombre -->
+            <div>
+                <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required 
+                       class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Campo para la Cédula -->
+            <div>
+                <label for="cedula" class="block text-sm font-medium text-gray-700 mb-1">Cédula</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ingrese su número de cédula" required 
+                       class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Campo para el Teléfono -->
+            <div>
+                <label for="telefono" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required 
+                       class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Campo para la Dirección -->
+            <div>
+                <label for="direccion" class="block text-sm font-medium text-gray-700 mb-1">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección de residencia" required 
+                       class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <!-- Contenedor de botones -->
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 mt-6">
+                <!-- Botón Limpiar -->
+                <button type="button" id="limpiar-btn"
+                        class="w-full bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-600 transition-colors duration-200">
+                    Limpiar
+                </button>
+
+                <!-- Botón Guardar -->
+                <button type="button" id="guardar-btn"
+                        class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-200">
+                    Guardar
+                </button>
+
+                <!-- Botón Enviar -->
+                <button type="submit" id="enviar-btn"
+                        class="w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200">
+                    Enviar
+                </button>
+            </div>
+        </form>
+        </section>
+    </main>
+
+    
+</body>
+</html>
